@@ -1,0 +1,42 @@
+Small data test:
+no policy: 778800ns
+sequential: 1159700ns
+parallel: 779400ns
+unsequential: 543700ns
+paralel unseq: 536300ns
+
+Medium data test:
+no policy: 8234000ns
+sequential: 8150100ns
+parallel: 7638400ns
+unsequential: 5426300ns
+paralel unseq: 5396400ns
+
+Large data test:
+no policy: 76174200ns
+sequential: 76458600ns
+parallel: 76485500ns
+unsequential: 54227800ns
+paralel unseq: 54151900ns
+
+Own parallel algorithm:
+K=1    822800ns
+K=2    1251400ns
+K=3    861700ns
+K=4    409000ns
+K=5    805900ns
+K=6    478000ns
+K=7    488500ns
+K=8    587700ns
+K=9    644200ns
+K=10   751300ns
+K=11   736800ns
+K=12   865300ns
+K=13   871100ns
+K=14   965200ns
+K=15   1106700ns
+K=16   994200ns
+
+The minimum execution time is 409000ns, and it is achieved with K=4 (often this number is equal to the number of processor cores).
+Regarding how the execution time increases as K increases, typically the execution time increases as K increases after reaching the optimal value. 
+This is due to the increased overhead associated with managing threads and changing context between them.
